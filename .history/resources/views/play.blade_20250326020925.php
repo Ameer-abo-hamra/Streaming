@@ -16,13 +16,13 @@
         var video = document.getElementById('video');
         if (Hls.isSupported()) {
             var hls = new Hls();
-            hls.loadSource("{{ asset("Video/{{$Video}}") }}");
+            hls.loadSource("{{ asset() }}");
             hls.attachMedia(video);
             hls.on(Hls.Events.MANIFEST_PARSED, function() {
                 video.play();
             });
         } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-            video.src = "{{ asset("Video/{{$Video}}") }}";
+            video.src = "{{ asset('converted_video/' . 'adaptive_video_0_250.m3u8 . ') }}";
             video.play();
         }
     </script>

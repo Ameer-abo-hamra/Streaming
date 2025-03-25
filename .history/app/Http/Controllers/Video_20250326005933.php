@@ -78,6 +78,7 @@ class Video extends Controller
             ->addFormat($high)
             ->toDisk("converted_video")
             ->save("converted_video/{$videoName}_hls/master.m3u8");
+            ;;;;;;;;;;
 
         return response()->json([
             'message' => 'تم رفع وتحويل الفيديو بنجاح!',

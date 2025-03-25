@@ -16,7 +16,7 @@
         var video = document.getElementById('video');
         if (Hls.isSupported()) {
             var hls = new Hls();
-            hls.loadSource("{{ asset("Video/{{$Video}}") }}");
+            hls.loadSource("{{ asset("{{$Video}}") }}");
             hls.attachMedia(video);
             hls.on(Hls.Events.MANIFEST_PARSED, function() {
                 video.play();
