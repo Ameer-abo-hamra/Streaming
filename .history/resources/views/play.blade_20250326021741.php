@@ -25,9 +25,6 @@
         //     video.src = "{{ asset('Video/' . "{$video}") }}";
         //     video.play();
         // }
-
-        video.src = "{{ asset('Video/' . "{$video}") }}";
-        video.play();
     </script>
 </body>
 
