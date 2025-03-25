@@ -25,23 +25,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 70vh;
+            height: 80vh;
         }
 
         video {
-            width: 60%;
-            max-width: 600px; /* تصغير الحجم */
-            border-radius: 10px;
+            width: 80%;
+            max-width: 900px;
+            border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
             background-color: #000;
-        }
-
-        /* تحسين استجابة الفيديو على الشاشات الصغيرة */
-        @media (max-width: 768px) {
-            video {
-                width: 90%;
-                max-width: 400px; /* تقليل الحجم أكثر على الشاشات الصغيرة */
-            }
         }
     </style>
 </head>
